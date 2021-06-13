@@ -1,3 +1,7 @@
+
+## Exploit
+
+```python
 import socket
 
 ip = ""
@@ -23,4 +27,4 @@ try:
 	print("Done!")
 except:
     print("Could not connect.")
-
+```

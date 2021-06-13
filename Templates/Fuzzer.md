@@ -1,3 +1,4 @@
+```python
 import socket, time, sys
 
 ip = "10.0.2.4"
@@ -22,3 +23,4 @@ while True:
 	except:
 		print("Could not connect to {}:{} ".format(ip, str(port)))
 		sys.exit(0)
+```
