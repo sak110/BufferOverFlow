@@ -31,7 +31,7 @@ try:
 	s.connect((ip, port))
 	s.recv(1024)
 	print("Sending pattern . . .")
-	s.send((buffer.encode())
+	s.send((buffer.encode()))
 	print("Done!")
 except:
     print("Could not connect.")
